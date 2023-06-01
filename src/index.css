@@ -1,0 +1,128 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-color: #BCCEF8;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.header, .create-todo, #clearAll {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.title-word {
+  animation: color-animation 3s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #BA90C6; 
+  --color-2: #C0DBEA; 
+  --color-3: #DBAD4A; 
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #E97777;
+  --color-3: #E8A0BF;
+}
+
+.title-word-3 {
+  --color-1: #E97777;
+  --color-2: #DBAD4A;
+  --color-3: #E97777;
+}
+
+.title-word-4 {
+  --color-1: #C0DBEA;
+  --color-2: #BA90C6;
+  --color-3: #DBAD4A;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background: #313133;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #7F669D;
+}
+
+button {
+  padding: 19px 40px;
+  background-color: #7F669D;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.task-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+p {
+  background: #f8ede3d1;
+  padding: 5px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 600px;
+  font-size: 20px;
+  color: #354259;
+}
+
+.button-modify {
+  background-color: #f8ede3d1;
+  padding: 8.5px 0px;
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
